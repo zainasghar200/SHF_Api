@@ -1,0 +1,50 @@
+{
+  "name": "property-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sails.js Application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "bcryptjs": "^2.4.3",
+    "g": "^2.0.1",
+    "gmail-send": "^1.8.10",
+    "grunt": "1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.3.0",
+    "npm": "^6.11.3",
+    "passport-jwt": "^4.0.0",
+    "redis": "^2.8.0",
+    "sails": "^1.2.3",
+    "sails-hook-email": "^0.12.1",
+    "sails-hook-grunt": "^4.0.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mongo": "^1.0.1",
+    "socket.io": "^2.2.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "nodemon": "^1.19.2"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
+    "server": "nodemon app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://Ameerhamxa302@bitbucket.org/Ameerhamxa302/property-api.git"
+  },
+  "author": "Ameer Hamza",
+  "license": "",
+  "engines": {
+    "node": "^10.16"
+  }
+}
